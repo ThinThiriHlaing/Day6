@@ -3,7 +3,9 @@
     background-color: transparent;
     font-size: 20px;
     color: black;
-    border: 1px solid rgba(166, 137, 137, 0.638);
+    /* border: 1px solid rgba(166, 137, 137, 0.638); */
+    border: 0;
+    box-shadow: 1px 1px 1px rgb(190, 189, 189);
     cursor: pointer;
     position: relative;
 }
@@ -17,7 +19,10 @@
     left: 0;
     z-index: -1;
     transition: clip-path .5s ease-in-out;
-    
+    -webkit-transition: clip-path .5s ease-in-out;
+    -moz-transition: clip-path .5s ease-in-out;
+    -ms-transition: clip-path .5s ease-in-out;
+    -o-transition: clip-path .5s ease-in-out;
 }
 #btn-read::before{
     clip-path: circle(0 at 0 0);
